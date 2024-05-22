@@ -1,9 +1,16 @@
 from openai import OpenAI
-client = OpenAI(api_key="sk-proj-JW6ggJ3spSNps3QY7p59T3BlbkFJsAzyxh7hcpYFLXl7RmA6")
+import os
+
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
+
+if not OPENAI_API_KEY:
+    raise ValueError("API key is not set")
+
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 
 response = client.chat.completions.create(
-  model="gpt-3.5-turbo",
+  model="gpt-4o",
   messages=[
     {"role": "system", "content": "You are a helpful assistant."},
     {"role": "user", "content": "Who won the world series in 2020?"},
