@@ -6,7 +6,7 @@ import json
 def get_time():
     return datetime.now().strftime("%H:%M:%S")
 
-get_time = {
+get_times = {
     "type": "function",
     "function": {
         "name": "get_time",
@@ -40,7 +40,7 @@ read__guidlines = {
     }
 }
 
-tools = [get_time, read__guidlines]
+tools = [get_times, read__guidlines]
 
 available_functions = { "get_time": get_time(), "read_twitch_guidlines": read_twitch_guidlines() }
 
