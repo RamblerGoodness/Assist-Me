@@ -3,7 +3,7 @@ from functions.functions import available_functions
 
 print(tools)
 
-print(available_functions)
+# print(available_functions)
 
 
 
