@@ -1,17 +1,54 @@
-from openai import OpenAI
-import os
+import pygame
+import pygame_menu
+from pygame_menu import themes
+import ollama
+from ollama import Client
+import openai
 
 
-# Init
-OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
+class functions():
+    pass
 
-if not OPENAI_API_KEY:
-    raise ValueError("API key is not set")
+class twitch():
+    pass
 
-# File paths
-file_path = "Data/Files"
-image_input_path = "Data/Images/input/"
-image_output_path = "Data/Images/output/"
+class openai():
+    pass
 
-# OpenAI client
-client = OpenAI(api_key=OPENAI_API_KEY)
+class ollama_ai( ):
+
+    def __init__(self, model, host: str= 'localhost' ):
+        self.host = host
+        if self.host != None:
+            self.client = Client(host=self.host)
+        self.model = model
+
+
+    def chat(self, messages:list, stream:bool=False, model:str = None, format='json'):
+        if model == None:
+            model = self.model
+        
+
+    def options(self):
+        pass
+
+
+class menu():
+    pygame.init()
+    pass
+
+class TTS():
+    import TTS
+    pass
+
+class character():
+    pass
+
+class stable_diff():
+    pass
+
+def main():
+    pass
+
+if __name__ == '__main__':
+    main()
