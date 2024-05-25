@@ -40,6 +40,12 @@ We're always open to new ideas. If you have any suggestions or feature requests,
  
     `pip install Openai`
 
+    `pip install pygame`
+
+    `pip install pygame-menu`
+
+    ![tech stack](./Data/The_Tech_Stack.png)
+
 
 # Getting Started
 
