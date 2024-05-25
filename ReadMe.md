@@ -1,43 +1,47 @@
-# AssistMe - Windows Only (For now?) 
+# AssistMe - Your Desktop Friend
 
-This program is still in the testing Phase. 
-Outline:
---Ollama or OpenAI powered chat bot.
+AssistMe is an AI-powered desktop and Twitch streaming assistant that brings your pictures to life. Whether you're building a Jarvis or want a picture of your mom to judge everything you do on your desktop, AssistMe makes it possible.
 
---Enable Function Calling for both.
-
---Pygame to display character art / Animate.
-
---TTS play sound and animations on art.
-
---Enable BYO art.
-
---Twitch Integration.
-
---Screen Shots and image recognition.
-
---Memory storage/context-window solution.
-
-If you have any ideas or want me to add any features then let me know.
-
-## Requires Python 3.10
-
-
-## AI Desktop/Twitch Streaming assistent/Cohost.
-Bring a picture and bring it to life with A.I.
-Building a Javis? Want a picture of your Mom to judge everything you do on your desktop? 
-All that and more is possible with this tool.
-
-## Built using py-game and Ollama/OpenAI.
-
-
+**Please note:** This program is currently in the testing phase.
 
 ## Features
 
-- Bring pictures to life with A.I.
-- Use the tool as a co-host for Twitch streaming.
-- Integration with py-game and Ollama.
-- Potential addition of OpenAI support using your OpenAI key.
+- **OpenAI-powered or Ollam-powered chatbot:** Engage in interactive conversations with your AI assistant. 
+
+- **Function calling:** Enable function calling for both chatbot and user.
+
+- **Pygame integration:** Display and animate character art.
+
+- **Text-to-Speech (TTS):** Play sound and animations on art.
+
+- **Customizable art:** Bring your own art to the platform.
+
+- **Twitch integration:** Connect your Twitch account for an enhanced streaming experience.
+
+- **Screenshot and image recognition:** Capture and recognize images on your screen.
+
+- **Memory storage/context-window solution:** Store and retrieve context from your interactions with the AI.
+
+- **Interactive Twitch game:** Maybe a chat vs AI battle mode? (Under consideration)
+
+We're always open to new ideas. If you have any suggestions or feature requests, feel free to let us know.
+
+## Requirements
+
+- Python 3.10
+- Windows OS (Support for other operating systems is under consideration)
+
+## Getting Started
+
+(Here you can add instructions on how to install and use your application)
+
+## Contributing
+
+(If you're open to contributions, you can add instructions on how to contribute to your project here)
+
+## License
+
+(If your project is open source, you can specify the license under which it's available here)
 
 ## Project Status
 
