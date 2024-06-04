@@ -6,7 +6,7 @@ AssistMe is an AI-powered desktop and Twitch streaming assistant that brings you
 
 ## Features
 
-- **OpenAI-powered or Ollam-powered chatbot:** Engage in interactive conversations with your AI assistant. 
+- **OpenAI-powered or Ollam-powered chatbot:** Engage in interactive conversations with your AI assistant.
 
 - **Function calling:** Enable function calling for both chatbot and user.
 
@@ -30,14 +30,14 @@ We're always open to new ideas. If you have any suggestions or feature requests,
 
 - Python 3.10
 - Windows OS (Support for other operating systems is under consideration)
-- Python Requierments
- 
+- Python Requirements
+
     `pip install torch`
- 
+
     `pip install TTS`
- 
+
     `pip install Ollama`
- 
+
     `pip install Openai`
 
     `pip install pygame`
@@ -46,8 +46,7 @@ We're always open to new ideas. If you have any suggestions or feature requests,
 
     ![tech stack](./Data/The_Tech_Stack.png)
 
-
-# Getting Started
+## Getting Started
 
 (Here you can add instructions on how to install and use your application)
 
