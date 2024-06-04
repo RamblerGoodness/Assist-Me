@@ -1,54 +1,21 @@
-import pygame
-import pygame_menu
-from pygame_menu import themes
-import ollama
-from ollama import Client
-import openai
+# main.py
+import threading
+import twitch_bot
+import pygame_display
 
+def run_twitch_bot():
+    bot = twitch_bot.Bot()
+    bot.run()
 
-class functions():
-    pass
+def run_pygame_display():
+    pygame_display.main()
 
-class twitch():
-    pass
+if __name__ == "__main__":
+    t1 = threading.Thread(target=run_twitch_bot)
+    t2 = threading.Thread(target=run_pygame_display)
 
-class openai():
-    pass
+    t1.start()
+    t2.start()
 
-class ollama_ai( ):
-
-    def __init__(self, model, host: str= 'localhost' ):
-        self.host = host
-        if self.host != None:
-            self.client = Client(host=self.host)
-        self.model = model
-
-
-    def chat(self, messages:list, stream:bool=False, model:str = None, format='json'):
-        if model == None:
-            model = self.model
-        
-
-    def options(self):
-        pass
-
-
-class menu():
-    pygame.init()
-    pass
-
-class TTS():
-    import TTS
-    pass
-
-class character():
-    pass
-
-class stable_diff():
-    pass
-
-def main():
-    pass
-
-if __name__ == '__main__':
-    main()
+    t1.join()
+    t2.join()
