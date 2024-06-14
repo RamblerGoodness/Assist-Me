@@ -30,7 +30,7 @@ We're always open to new ideas. If you have any suggestions or feature requests,
 
 - Python 3.10
 - Windows OS (Support for other operating systems is under consideration)
-- Python Requierments
+- Python Requirements
  
     `pip install torch`
  
