@@ -64,11 +64,4 @@ while running:
     if pygame.mixer.music.get_busy():
       pygame.time.wait(100)  
 
-def run_twitch_bot():
-    bot = twitch_bot.Bot()
-    bot.run()
-
-    # Update the display
-    pygame.display.flip()
-
 pygame.quit()
