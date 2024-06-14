@@ -1,0 +1,8 @@
+# Add your own values to the following variables and rename the file to .env
+
+
+BOT_NICK=your_bot_nickname
+CHANNEL=your_twitch_channel
+OAUTH_TOKEN=your_oauth_token
+CLIENT_ID=your_client_id
+CLIENT_SECRET=your_client_secret
