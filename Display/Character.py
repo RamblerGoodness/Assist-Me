@@ -5,23 +5,22 @@ import win32con
 import win32gui
 import os
 
-
 # pygame setup
 class Character():
-    def __init__(self, width, height, image, ai_refrence, character_name ):
+    def __init__(self, image, ai_reference, character_name, width=win32api.GetSystemMetrics(0), height=win32api.GetSystemMetrics(1)  ):
         
-        self.width = width
-        self.height = height
+        self.width = int(width)
+        self.height = int(height)
         os.environ['SDL_VIDEO_WINDOW_POS'] = "%d,%d" % (0,0)
         self.image = image
-        self.ai_model = ai_refrence
+        self.ai_model = ai_reference
         self.character_name = character_name
 
     def start(self):
         
         pygame.init()
         clock = pygame.time.Clock()
-        screen = pygame.display.set_mode((self.width, self.height), pygame.NOFRAME, pygame.SCALED)
+        screen = pygame.display.set_mode( (self.width, self.height), pygame.NOFRAME, pygame.SCALED)
         pygame.display.set_caption(self.character_name)
         
         #Key out color.
@@ -53,7 +52,7 @@ class Character():
             pygame.display.flip()
 
 if __name__ == "__main__":
-    character = Character(512, 780, "image", "ai", "character")
+    character = Character(image="images/character.png", ai_reference="gpt-4o", character_name="Character")
     character.start()
 
     
