@@ -19,4 +19,20 @@ response = client.chat.completions.create(
   ]
 )
 
-print(response)
+if __name__ == "__main__":
+    
+    print("Welcome to the chatbot! Ask me anything or say goodbye to exit.\n")
+
+    while True:
+      messages = []
+      prompt = input("You: ")
+      messages.append({"role": "user", "content": prompt})
+      response = client.chat.completions.create(
+          model="gpt-4o",
+          messages=messages
+      )
+      print("Bot: ", response.choices[0].message.content, "\n")
+      messages.append({"role": "assistant", "content": response.choices[0].message.content})
+
+      if prompt.lower() == "goodbye":
+          break
